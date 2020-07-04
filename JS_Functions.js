@@ -20,5 +20,3 @@ function createTableFromArray(dt, tc, id, style, align){
   txt += "</table>"
   return txt
 };
-
-var x
