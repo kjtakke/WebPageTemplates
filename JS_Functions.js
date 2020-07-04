@@ -1,6 +1,6 @@
-function createTableFromArray(dt){ 
+function createTableFromArray(dt, tc, id){ 
   let txt = ""
-  txt += "<table class='table' align='center'>"
+  txt += "<table class='" + tc +  "' id ='" + id + "'>"
   for (i = 0; i < dt.length; i++) {
     txt += "<tr>"
     for (j = 0; j < dt[0].length; j++) {
@@ -20,3 +20,5 @@ function createTableFromArray(dt){
   txt += "</table>"
   return txt
 };
+
+var x
