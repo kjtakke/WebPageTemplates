@@ -1,6 +1,6 @@
-function createTableFromArray(dt, tc, id){ 
+function createTableFromArray(dt, tc, id, style, align){ 
   let txt = ""
-  txt += "<table class='" + tc +  "' id ='" + id + "'>"
+  txt += "<table class='" + tc +  "' align='" + align +  "' style='" + style + "' id ='" + id + "'>"
   for (i = 0; i < dt.length; i++) {
     txt += "<tr>"
     for (j = 0; j < dt[0].length; j++) {
