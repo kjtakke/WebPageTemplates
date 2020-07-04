@@ -1,0 +1,208 @@
+   <!DOCTYPE html>
+   <html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <style>
+        .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        background-color: #fff;
+        padding: 5px;
+        }
+
+        .grid-item {
+        background-color: #fff;
+        text-align: center;
+        padding: 10px;
+        font-size: 30px;
+        }
+
+        .topBar {
+        grid-column: 1 / span 10;
+        grid-row: 1;
+        }
+
+        .area {
+        grid-column: 1 span 1;
+        grid-row: 1;
+        }
+
+        .measure1 {
+        grid-column: 1 span 1;
+        grid-row: 1;
+        }
+        .measure2 {
+        grid-column: 2 span 1;
+        grid-row: 1;
+        }
+        .measure3 {
+        grid-column: 3 span 1;
+        grid-row: 1;
+        }
+        .measure4 {
+        grid-column: 4 span 1;
+        grid-row: 1;
+        }
+        .measure5 {
+        grid-column: 5 span 1;
+        grid-row: 1;
+        }
+        .measure6 {
+        grid-column: 6 span 1;
+        grid-row: 1;
+        }
+        .measure7 {
+        grid-column: 7 span 1;
+        grid-row: 1;
+        }
+        .measure8 {
+        grid-column: 8 span 1;
+        grid-row: 1;
+        }
+        .measure9 {
+        grid-column: 9 span 1;
+        grid-row: 1;
+        }
+        .measure10 {
+        grid-column: 10 span 1;
+        grid-row: 1;
+        }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="position:fixed;width:100%;">
+            
+            <a class="navbar-brand" href="#" id="navBarTitle"></a>
+
+            <ul class="navbar-nav" id="navBar">
+                <li class="nav-item" id="navBaritem1">
+                    <a class="nav-link" href="#" id="navBarLink1"></a>
+                </li>
+                <li class="nav-item" id="navBaritem2">
+                    <a class="nav-link" href="#"i d="navBarLink2"></a>
+                </li>
+                <li class="nav-item" id="navBaritem3">
+                    <a class="nav-link" href="#"i d="navBarLink3"></a>
+                </li>
+                <li class="nav-item" id="navBaritem4">
+                    <a class="nav-link" href="#" id="navBarLink4"></a>
+                </li>
+                <li class="nav-item" id="navBaritem5">
+                    <a class="nav-link" href="#"i d="navBarLink5"></a>
+                </li>
+                <li class="nav-item" id="navBaritem6">
+                    <a class="nav-link" href="#"i d="navBarLink6"></a>
+                </li>
+                </li>
+                <li class="nav-item" id="navBaritem7">
+                    <a class="nav-link" href="#" id="navBarLink7"></a>
+                </li>
+                <li class="nav-item" id="navBaritem7">
+                    <a class="nav-link" href="#"i d="navBarLink8"></a>
+                </li>
+                <li class="nav-item" id="navBaritem9">
+                    <a class="nav-link" href="#"i d="navBarLink9"></a>
+                </li>
+            </ul>
+        </nav>
+          <br><br>
+        <div class="grid-container" id="measures">   
+            <div class="grid-item measure1">
+                <button type="button" class="btn " id="measureMetricText1">
+                    <span class="badge " id="measureMetric1"></span>
+                </button>
+            </div>
+            <div class="grid-item measure2">
+                <button type="button" class="btn " id="measureMetricText2">
+                    <span class="badge " id="measureMetric2"></span>
+                </button>
+            </div>
+            <div class="grid-item measure3">
+                <button type="button" class="btn " id="measureMetricText3">
+                    <span class="badge " id="measureMetric3"></span>
+                </button>
+            </div>
+            <div class="grid-item measure4">
+                <button type="button" class="btn " id="measureMetricText4">
+                    <span class="badge " id="measureMetric4"></span>
+                </button>
+            </div>
+            <div class="grid-item measure5">
+                <button type="button" class="btn " id="measureMetricText5">
+                    <span class="badge " id="measureMetric5"></span>
+                </button>
+            </div>
+            <div class="grid-item measure6">
+                <button type="button" class="btn " id="measureMetricText6">
+                    <span class="badge " id="measureMetric6"></span>
+                </button>
+            </div>
+                
+            <div class="grid-item measure7">
+                <button type="button" class="btn " id="measureMetricText7">
+                    <span class="badge " id="measureMetric7"></span>
+                </button>
+            </div>
+                <div class="grid-item measure8">
+                <button type="button" class="btn " id="measureMetricText8">
+                    <span class="badge " id="measureMetric8"></span>
+                </button>
+            </div>
+                <div class="grid-item measure9">
+                <button type="button" class="btn " id="measureMetricText9">
+                    <span class="badge " id="measureMetric9"></span>
+                </button>
+            </div>
+                <div class="grid-item measure10">
+                <button type="button" class="btn " id="measureMetricText10">
+                    <span class="badge " id="measureMetric10"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="grid-container" id="areaContainer1">
+            <div class="grid-item area" id="area1"></div>
+        </div>
+
+        <div class="grid-container" id="areaContainer2">
+            <div class="grid-item area" id="area2"></div>
+        </div>
+
+        <div class="grid-container" id="areaContainer3">
+            <div class="grid-item area" id="area3"></div>
+        </div>
+
+        <div class="grid-container" id="areaContainer4">
+            <div class="grid-item area" id="area4"></div>
+        </div>
+
+        <div class="grid-container" id="areaContainer5">
+            <div class="grid-item area" id="area5"></div>
+        </div>
+
+        <div class="grid-container" id="areaContainer6">
+            <div class="grid-item area" id="area6"></div>
+        </div>
+
+        <div class="grid-container" id="areaContainer7">
+            <div class="grid-item area" id="area7"></div>
+        </div>
+
+        <div class="grid-container" id="areaContainer8">
+            <div class="grid-item area" id="area8"></div>
+        </div>
+
+        <div class="grid-container" id="areaContainer9">
+            <div class="grid-item area" id="area9"></div>
+        </div>
+
+        <div class="grid-container" id="areaContainer10">
+            <div class="grid-item area" id="area10"></div>
+        </div>
+
+    </body>
+</html>
